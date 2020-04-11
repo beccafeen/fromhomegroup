@@ -1,0 +1,45 @@
+{% extends "fancylayout.html" %}
+
+{% block content %}
+  <div class="jumbotron">
+		<h1>Hangman</h1>
+		<p>Welcome to our Hangaman game</p>
+	</div>
+  <!-- This uses a form to get the number to factor! -->
+	<form method="post">
+	  <h2>Select a price range to see houses matching your budget<br>
+			<input type="number" name="low" value="{{low}}">: low<br>
+			<input type="number" name="high" value="{{high}}">: high
+		</h2>
+		<br>
+	  <input class="btn btn-lg btn-danger" type="submit">
+	</form>
+<div style="margin:20px; border-top:thick solid blue"></div>
+{%- if house_list != [] %}
+		<h2>Homes in price range {{low}} to {{high}}</h2>
+		<table class="table table-bordered table-striped">
+			<thead>
+				{% for val in house_list[0] %}
+					<th>
+					 {{val[0]}}
+				 </th>
+			 {% endfor %}
+			</thead>
+			<tbody>
+
+				{% for item in house_list %}
+				  <tr>
+				    {% for val in item %}
+				     <td>
+					    {{val[1]}}
+					 	</td>
+				    {% endfor %}
+				  </tr>
+				{% endfor %}
+			</tbody>
+		</table>
+{%- endif %}
+
+<hr>
+
+{% endblock %}
