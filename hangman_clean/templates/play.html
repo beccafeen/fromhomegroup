@@ -1,23 +1,45 @@
 {% extends "fancylayout.html" %}
 
 {% block content %}
-  <div class="jumbotron">
-    <h1>Hangman</h1>
-  </div>
-  <p>Here is your word</p>
-  {{state['word']}}
-  {{state['word_so_far']}}
-  <form method="post" action="/play">
-    <br>
-    Guess a letter: <input type="text" name="guess">
-    <br>
-    <br>
-    <input type="submit" class="btn btn-lg btn-danger">
-  </form>
-  <br>
-  <p>Here are the letters you've guessed already</p>
-  {% for x in state['guesses'] %}
-   {{x}}
-  {% endfor %}
+	<div class="jumbotron">
+		<h1>Hangman</h1>
+	</div>
+	<p>Here is your word</p>
+	{{state['word']}}
+	{{state['word_so_far']}}
+	<form method="post" action="/play">
+		<br>
+		Guess a letter: <input type="text" name="guess">
+		<br>
+		<br>
+		<input type="submit" class="btn btn-lg btn-danger">
+	</form>
+	<br>
+	<p>Here are the letters you've guessed already</p>
+	{% for x in state['guesses'] %}
+	 {{x}}
+	{% endfor %}
+	<br>
+	{# set state["guesses"] = []#}
+	{# for x in state['guesses'] if request.form['guess'] == x in state['guesses'][1:]#}
 
+	{# if request.form['guess'] in state['guesses'] #}
+		{#state['guesses']#}
+	{%if not request.form['guess'].isalpha()%}
+		<p>That is not a letter, try again</p>
+	{%elif request.form['guess'] | length > 1%}
+		<p>That is more than one letter, try again</p>
+	{% endif %}
+	{%if request.form['guess'] in state['word']%}
+		<p>Good job! That letter is in the word</p>
+	{%elif request.form['guess'] not in state['word']%}
+		<p>That letter is not in the word, try again</p>
+	{%endif%}
+	{%if state["done"]==True and state['word_so_far'] == state['word']%}
+		<p>Good job! You won. The word was</p>
+		{{state['word']}}
+	{%elif state["done"]==True%}
+		<p>Sorry, you lost. The word was</p>
+		{{state['word']}}
+	{%endif%}
 {% endblock %}
