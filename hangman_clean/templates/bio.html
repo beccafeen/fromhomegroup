@@ -1,6 +1,79 @@
 {% extends "fancylayout.html" %}
 
 {% block content %}
+
+<!DOCTYPE html>
+<div class="jumbotron">
+<h1>Developers' Bios</h1>
+</div>
+<div class="text-center">
+<a class="btn btn-success" href="/"> Home </a>
+<a class="btn btn-warning" href="/start">Hangman Game</a>
+<a class="btn btn-primary" href="bio">Developers' Bios</a>
+</div>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
 	<div class="jumbotron">
 	<html>
 		<title>Bio</title>
@@ -8,52 +81,49 @@
 			<div class="row">
 			  <div class="column">
 			    <div class="card">
-			      <img src="becca_picture.jpg" alt="becca" style="width:100%">
+						<img src="https://lh3.googleusercontent.com/n2GvlTxOL8RNH4VDT-KWHFNohdZoho_z5lNaGnO7u-poxZzehaGpsOEISHbdcLCEm0ZHOMrt9Vwd1XjjBOWHmMDQCz3SwS7QA8Xm4sDI=s1600" alt="emily" style="width:100%">
+					 <div class="container">
+						 <h2>Emily Botto</h2>
+						 <p class="title">Game Developer & Web Designer &amp; Founder</p>
+						 <p>Emily Botto is a senior at Brandeis University studying business and Communication & Literature (IIM).
+							 This is her first coding class ever and she is getting by thanks to some awesome teammates :)</p>
+						 <p>Brandeis University</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="column">
+			    <div class="card">
+						<img src="https://lh3.googleusercontent.com/-z3RS5xhkm6Din7-4DTZaFrHyYimtIEN0x0J7zL4RL30ExVJUNskozndRm--G-G9i-8r4tSPdhUMTnPfcXIjneKI8z0tc5KwZ_a1UjCO=s1600" alt="becca" style="width:100%">
 			      <div class="container">
 			        <h2>Becca Feenstra</h2>
 			        <p class="title">Github Captain & Game Developer &amp; Founder</p>
 			        <p>Becca Feenstra is a Neuroscience and Biology double major at Brandeis University.
 								She spends most of the day thinking about her two dogs and doing logic puzzles.</p>
 			        <p>Brandeis Universty</p>
+
 			      </div>
 			    </div>
 			  </div>
 
 			  <div class="column">
 			    <div class="card">
-			      <img src="emily_picture.jpg" alt="emily" style="width:100%">
-			      <div class="container">
-			        <h2>Emily Botto</h2>
-			        <p class="title">Game Developer</p>
-			        <p>Emily Botto is a senior at Brandeis University studying business and Communication & Literature (IIM).
-								This is her first coding class ever and she is getting by thanks to some awesome teammates :)</p>
-			        <p>Brandeis University</p>
-			      </div>
-			    </div>
-			  </div>
-
-			  <div class="column">
-			    <div class="card">
-			      <img src="img3.jpg" alt="pam" style="width:100%">
-			      <div class="container">
-			        <h2>Pam Vargas</h2>
-			        <p class="title">Game Developer</p>
-			        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-			        <p>Brandeis University</p>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<div class="row">
-				<div class="column">
-					<div class="card">
-						<img src="gaby_picture.jpeg" alt="Gaby" style="width:100%">
+						<img src="https://lh4.googleusercontent.com/-YQf_edzD60FSpBqnDTxg0u8vYPYCWDaZe1JbClWLgnHCS8IPn9gma0EM49OVKmsfVjs3m42eJDxpGqPppvSIEQILp6-6tW69VTI-zud=s1600" alt="Gaby" style="width:100%">
 						<div class="container">
 							<h2>Gabriela Gonzalez Anavisca</h2>
 							<p class="title">Game Developer & Web Designer &amp; Founder</p>
-							<p>Gaby is currently a senior at Brandeis University. Her majors are Anthropology, Psychology, and Women, Gender, and Sexualities Studies.
-								She is a wannna be Computer Scientiest who was paired with an amazing and intelligent group of women to accomplised this project</p>
+							<p>Gaby is currently a senior at Brandeis University. Her majors are Anthropology, Psychology, and Women, Gender, and Sexualities Studies. She is a wannna be Computer Scientiest who was paired with an amazing and intelligent group of women to accomplised this project. You will always find her with a book in her hand.</p>
 							<p>Brandeis Universty</p>
+			      </div>
+			    </div>
+			  </div>
+				<div class="column">
+					<div class="card">
+						<img src="https://lh3.googleusercontent.com/XzzmFXNKyzzj4RLe-7jSU6y3HcxmWKoj-84InpFGuuLqPnz838B6yjJfIMIRYxFJPyMdPzLg_59QmbRgBMrmZECknFTNzoNxUUgFFPR7=s1517" alt="pam" style="width:100%">
+			      <div class="container">
+			        <h2>Pam Vargas</h2>
+			        <p class="title">Game Developer; Founder</p>
+			        <p>Pamela Vargas, goes by Pam, is a double major in Chemistry and Applied Mathematics. When she is not drawing she spends most of her time reading.</p>
+			        <p>Brandeis University</p>
 						</div>
 					</div>
 				</div>
