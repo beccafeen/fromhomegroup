@@ -3,6 +3,11 @@
 {% block content %}
 	<div class="jumbotron">
 		<h1>Hangman</h1>
+		<div class="text-center">
+		<a class="btn btn-success" href="/"> Home </a>
+		<a class="btn btn-warning" href="/start">Hangman Game</a>
+		<a class="btn btn-primary" href="bio">Developers' Bios</a>
+		</div>
 	</div>
 	<p>Here is your word</p>
 	{{state['word_so_far']}}
@@ -14,5 +19,5 @@
 		<input type="submit" class="btn btn-lg btn-danger">
 	</form>
 	<br>
-	
+
 {% endblock %}
