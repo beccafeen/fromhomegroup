@@ -6,27 +6,27 @@ def movie_quiz():
         movie = input("What movie do you like the best? choose only one\n a. Blue Valentine\n b.Shutterisland\n c.Deadpool\n d.Big Hero 6\n e.Clueless\n f.The Conjuring\n g.Barbie Princess School\n h.Mean Girls\n i.Babadook\n j.Aquaman\n k.The Hangover\n l.Get out")
         print("You should read")
 
-        if movie == 'a' or 'blue valentine' or "Blue Valentine" :
+        if movie == 'a':
             print ("Beautiful Disaster by Jamie McGuire")
-        elif movie == 'b' or 'shutterisland' or 'Shutter Island' or 'Shutterisland':
+        elif movie == 'b':
             print ("The Last Sister by Kendra Elliot")
-        elif movie == 'c' or 'deadpool' or 'Deadpool':
+        elif movie == 'c':
             print ("Darkly Dreaming Dexter by Jeff Lindsay")
-        elif movie == 'd' or "big hero 6" or 'Big Hero 6':
+        elif movie == 'd':
              print ("A Good Kind of Trouble by Lisa Moore Ramee")
-        elif movie == 'e' or 'Clueless' or 'clueless':
+        elif movie == 'e':
              print ("Anna and the French Kiss by Stephanie Perkins")
-        elif movie == 'f' or 'conjuring' or 'Conjuring':
+        elif movie == 'f':
             print("The Hunting Hill House by Shirley Jackson")
-        elif movie == 'i' or 'Babadook' or 'babadook':
+        elif movie == 'i':
             print("Beloved by Toni Morrison")
-        elif movie == 'k' or ' The Hangover' or 'hangover' or 'Hangover' or 'the hangover':
+        elif movie == 'k':
             print("Boys Don't Knit by T.J. Jackson")
-        elif movie == 'j' or 'aquaman' or 'Aquaman':
+        elif movie == 'j':
             print("The Other daughter by Shalini Boland")
-        elif movie == 'h' or 'Mean Girls' or 'mean girls':
+        elif movie == 'h':
             print("Beauty Queens by Libbie Bray")
-        elif movie == 'g' or 'Barbie Princess School' or 'barbie princess school':
+        elif movie == 'g':
             print("Amina's Voice by Hera Khan")
         else:
             print("Sorry, better luck next time")
