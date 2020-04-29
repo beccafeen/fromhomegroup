@@ -112,7 +112,6 @@ def play_hangman():
 		while want_to_play == True:
 				guessed_letters = []
 				word = str(generate_random_word())
-				print(word)
 				print(HANGMAN[0])
 				letter = input('Please choose a letter') #"ask the user for a letter"
 				attempts = (len(HANGMAN) - 1)
@@ -177,7 +176,7 @@ def play_hangman():
 
 								elif attempts <= 0:#the number of guesses left is zero
 										done = True
-										print('Sorry, you lost')#set done to be true and tell the user they lost!"
+										print('Sorry, you lost, the word was ' +  word)#set done to be true and tell the user they lost!"
 										break
 
 								else:
