@@ -3,31 +3,33 @@ def movie_quiz():
     play_again = True
     while play_again == True:
         print("Pick between these movies  and will tell you what book you should read next")
-        movie = input("What movie do you like the best? choose only one\n a. Blue Valentine\n b.Shutterisland\n c.Deadpool\n d.Big Hero 6\n e.Clueless\n f.The Conjuring\n g.Barbie Princess School\n h.Mean Girls\n i.Babadook\n j.Aquaman\n k.The Hangover\n l.Get out")
+        movie = input("What movie do you like the best? choose only one\n a. Blue Valentine\n b.Shutterisland\n c.Deadpool\n d.Big Hero 6\n e.Clueless\n f.The Conjuring\n g.Barbie Princess School\n h.Mean Girls\n i.Babadook\n j.Aquaman\n k.The Hangover\n l.Get out\n")
         print("You should read")
 
-        if movie == 'a':
+        if movie == 'a' or movie == 'blue valentine' or movie ==  "Blue Valentine" :
             print ("Beautiful Disaster by Jamie McGuire")
-        elif movie == 'b':
+        elif movie == 'b' or movie == 'shutterisland' or movie == 'Shutter Island' or movie =='Shutterisland':
             print ("The Last Sister by Kendra Elliot")
-        elif movie == 'c':
+        elif movie == 'c' or movie == 'deadpool' or movie == 'Deadpool':
             print ("Darkly Dreaming Dexter by Jeff Lindsay")
-        elif movie == 'd':
+        elif movie == 'd' or movie == "big hero 6" or movie == 'Big Hero 6':
              print ("A Good Kind of Trouble by Lisa Moore Ramee")
-        elif movie == 'e':
+        elif movie == 'e' or movie == 'Clueless' or movie == 'clueless':
              print ("Anna and the French Kiss by Stephanie Perkins")
-        elif movie == 'f':
+        elif movie == 'f' or movie == 'conjuring' or movie == 'Conjuring':
             print("The Hunting Hill House by Shirley Jackson")
-        elif movie == 'i':
+        elif movie == 'i' or movie == 'Babadook' or movie == 'babadook':
             print("Beloved by Toni Morrison")
-        elif movie == 'k':
+        elif movie == 'k' or movie == ' The Hangover' or movie == 'hangover' or movie == 'Hangover' or movie == 'the hangover':
             print("Boys Don't Knit by T.J. Jackson")
-        elif movie == 'j':
+        elif movie == 'j' or movie == 'aquaman' or movie == 'Aquaman':
             print("The Other daughter by Shalini Boland")
-        elif movie == 'h':
+        elif movie == 'h' or movie == 'Mean Girls' or movie == 'mean girls':
             print("Beauty Queens by Libbie Bray")
-        elif movie == 'g':
+        elif movie == 'g' or movie == 'Barbie Princess School' or movie == 'barbie princess school':
             print("Amina's Voice by Hera Khan")
+        elif movie == 'l' or movie == 'get out' or movie == 'Get Out':
+            print("Broken Monster by Lauren Beukes")
         else:
             print("Sorry, better luck next time")
 
@@ -44,7 +46,7 @@ def profession_quiz():
     while play_again == True:
         print("Pick outfit and it will tell you your profession")
         points=0
-        shirt = input("What mascara do you use?\n a. graphic T-shirt\n b.plad shirt\n c.Scrubs or sleeved folded button up\n d.Formal shirt or Button down\n ")
+        shirt = input("What type of top would you wear?\n a. graphic T-shirt\n b.plad shirt\n c.Scrubs or sleeved folded button up\n d.Formal shirt or Button down\n ")
         pants = input("What bottoms do you prefer?\n a.underwear only\n b.jeans or long skirt\n c. khaki pants\n d.dress pants or formal dress\n")
         jackets = input("What Jacket would you wear?\n a. hoddie or lounge cardigan\n b.pullover sweater or cardigan\n c.white coat\n d.blazer or suit coat\n")
         shoes = input ("What shoes would you wear?\n a.socks only\n b. converse\n c. loafers/ballerina flats\n d.derby/stilletos\n ")
@@ -117,11 +119,11 @@ def makeup_quiz():
     while play_again == True:
         print("Pick this makeup items and will tell you the typed of beauty Guru you are")
         points=0
-        mascara = input("What mascara do you use? Too face BTS, Mac, Maybellin, or Thrive? ")
-        lipstick = input("What type of lipstick? Matte, Gloss, Cream, or Balm ")
-        lipstickcompany = input("Which company would you buy lip products? Mac, Kylie Cosmatics, Glossier, or L'Oreal ")
-        eyeshadow = input ("What company would you buy an eyeshadow palette from? Kylie Cosmatics, Urban Decay, Morphe, or Nars ")
-        highlight = input ("How much higlight would you wear? Just a tad, average?, To the high heavens, or none")
+        mascara = input("What mascara do you use? Too face BTS, Mac, Maybellin, or Thrive?\n ")
+        lipstick = input("What type of lipstick? Matte, Gloss, Cream, or Balm\n ")
+        lipstickcompany = input("Which company would you buy lip products? Mac, Kylie Cosmatics, Glossier, or L'Oreal\n ")
+        eyeshadow = input ("What company would you buy an eyeshadow palette from? Kylie Cosmatics, Urban Decay, Morphe, or Nars\n ")
+        highlight = input ("How much higlight would you wear? Just a tad, average?, To the high heavens, or none\n ")
         if mascara == "Too face BTS" or mascara == "Too face":
             points += 3
         elif mascara == "Mac":
@@ -194,51 +196,51 @@ def personality_quiz():
         count_a = 0
         count_b = 0
         count_c = 0
-        if (q1=="A" or 'a'):
+        if (q1=="A" or q1=='a'):
             count_a += 1
-        elif (q1=="B" or 'b'):
+        elif (q1=="B" or q1=='b'):
             count_b += 1
-        elif (q1=="C" or 'c'):
+        elif (q1=="C" or q1=='c'):
             count_c +=1
         else:
             print("that is not an option")
 
         q2 = input('which shade of red do you like best?\nA. crimson\nB. pink\nC. maroon\n')
-        if (q2=="A" or 'a'):
+        if (q2=="A" or q2=="a"):
             count_a += 1
-        elif (q2=="B" or 'b'):
+        elif (q2=="B" or q2=="b"):
             count_b += 1
-        elif (q2=="C" or 'c'):
+        elif (q2=="C" or q2=="c"):
             count_c +=1
         else:
             print("that is not an option")
 
         q3 = input('which shade of green do you like best?\nA. emerald\nB. sage\nC. forest green\n')
-        if (q3=="A" or 'a'):
+        if (q3=="A" or q3=="a"):
             count_a += 1
-        elif (q3=="B" or 'b'):
+        elif (q3=="B" or q3=="b"):
             count_b += 1
-        elif (q3=="C" or 'c'):
+        elif (q3=="C" or q3=="c"):
             count_c +=1
         else:
             print("that is not an option")
 
         q4 = input('which shade of purple do you like best?\nA. violet\nB. lilac\nC. plum\n')
-        if (q4=="A" or 'a'):
+        if (q4=="A" or q4=="a"):
             count_a += 1
-        elif (q4=="B" or 'b'):
+        elif (q4=="B" or q4=="b"):
             count_b += 1
-        elif (q4=="C" or 'c'):
+        elif (q4=="C" or q4=="c"):
             count_c +=1
         else:
             print("that is not an option")
 
         q5 = input('which shade of yellow do you like best?\nA. sunshine yellow\nB. blonde\nC. marigold\n')
-        if (q5=="A" or 'a'):
+        if (q5=="A" or q5=="a"):
             count_a += 1
-        elif (q5=="B" or 'b'):
+        elif (q5=="B" or q5=="b"):
             count_b += 1
-        elif (q5=="C" or 'c'):
+        elif (q5=="C" or q5=="c"):
             count_c +=1
         else:
             print("that is not an option")

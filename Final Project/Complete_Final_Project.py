@@ -12,7 +12,7 @@ def game():
     global start
     different_game = True
     while different_game == True:
-        start = input('What do you want to play?\nEnter a, b, c, d, e, f, g, h, i or \n a. Hangman\n b. Odds n Evens\n c. Quizhub\n d.Fortune Telling Game\n e.Number Guessing Game\n f.Battleship\n g. Tic-Tac-Toe')
+        start = input('What do you want to play?\nEnter a, b, c, d, e, f, or g \n a. Hangman\n b. Odds n Evens\n c. Quizhub\n d.Fortune Telling Game\n e.Number Guessing Game\n f.Battleship\n g. Tic-Tac-Toe\n')
         print()
 
         if start == 'a':
